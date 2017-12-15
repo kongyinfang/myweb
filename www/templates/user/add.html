@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UserAdd</title>
+</head>
+<body>
+	<form action="/user/add/" method="POST">
+		user: <input type="text" name="username" />
+		<input type="submit" value="add">
+	</form>
+	{% if users %}
+	<table border="1px">
+		<tr>
+			<th>Username</th>
+		</tr>
+		{% for u in users %}
+		<tr>
+			<td>{{ u.username }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	{% endif %}
+</body>
+</html>
