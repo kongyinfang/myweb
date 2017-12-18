@@ -17,6 +17,13 @@ class Config:
 
 class DevelopmentConfig(Config):
 	DEBUG = True
+	MAIL_SERVER = 'smtp.qq.com',
+	MAIL_PROT = 25,
+	MAIL_USE_TLS = True,
+	MAIL_USE_SSL = False,
+	MAIL_USERNAME = "3020546767",
+	MAIL_PASSWORD = "kyf2014081608",
+	MAIL_DEBUG = True
 	# MAIL_SERVER = ''
 	# MAIL_PORT = 587
 	# MAIL_USE_TLS = True
